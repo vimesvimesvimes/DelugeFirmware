@@ -44,7 +44,6 @@ std::array<MenuItem*, RuntimeFeatureSettingType::MaxElement + 1> subMenuEntries{
     &menuFineTempo,
     &menuQuantize,
     &menuPatchCableResolution,
-
     nullptr,
 };
 
