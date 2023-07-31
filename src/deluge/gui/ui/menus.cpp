@@ -14,6 +14,12 @@
 #include "gui/menu_item/audio_clip/reverse.h"
 #include "gui/menu_item/audio_clip/sample_marker_editor.h"
 #include "gui/menu_item/audio_clip/transpose.h"
+#include "gui/menu_item/auto_sampler/end_note.h"
+// #include "gui/menu_item/auto_sampler/instrument_name.h"
+// #include "gui/menu_item/auto_sampler/interval.h"
+// #include "gui/menu_item/auto_sampler/start_note.h"
+// #include "gui/menu_item/auto_sampler/velocity.h"
+// #include "gui/menu_item/auto_sampler.h"
 #include "gui/menu_item/bend_range.h"
 #include "gui/menu_item/bend_range/main.h"
 #include "gui/menu_item/bend_range/per_finger.h"
@@ -423,6 +429,14 @@ UnpatchedParam srrMenu{"DECIMATION", PARAM_UNPATCHED_SAMPLE_RATE_REDUCTION};
 UnpatchedParam bitcrushMenu{HAVE_OLED ? "Bitcrush" : "CRUSH", PARAM_UNPATCHED_BITCRUSHING};
 
 MenuItem* fxMenuItems[] = {&modFXMenu, &eqMenu, &delayMenu, &reverbMenu, &clippingMenu, &srrMenu, &bitcrushMenu, NULL};
+
+// Autosampling ----------------------------------------------------------------------------------------
+
+// autosampler::StartNote autosamplerStartNoteMenu{"Start Note"};
+autosampler::EndNote autosamplerEndNoteMenu{"End Note"};
+// autosampler::Interval autosamplerIntervalMenu{"Interval"};
+// autosampler::Velocity autosamplerVelocityMenu{"Velocity"};
+// autosampler::InstrumentName autosamplerInstrumentNameMenu{"Instrument Name"};
 
 // MIDIInstrument menu ----------------------------------------------------------------------
 
